@@ -5,7 +5,8 @@ import datetime
 import pandas as pd
 
 # Import and prepare variables
-uri = "postgresql://postgres:postgres@35.205.146.144/postgres"
+#uri = "postgresql://postgres:postgres@35.205.146.144/postgres"
+uri="postgresql://user_pablo:HfUD2j0k2mSIj0FpEAoiJ5lxTPTNTgYg@dpg-d1j5lhili9vc739dp1q0-a.frankfurt-postgres.render.com/dbname_o7uj"
 engine = create_engine(uri)
 with open('my_model.pickle', 'rb') as file:
     model = pickle.load(file)
